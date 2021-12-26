@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器之类选择器</title>
+    <style>
+        /*类选择器口诀；样式点定义  结构类（class）调用  一个或多个 开发最常用*/
+        /*如果想要差异化选择不同标签，单独选一个或者几个标签，可以使用类选择器*/
+       /*类选择器在html中以cldaa属性表示，在css中，类选择器以一个“.”号显示*/
+       /*注意事；类选择器使用.（英文点号）进行识别，后面紧跟类名（自定义 我们自己取名）*/
+      .qiu{
+          color: greenyellow;
+      }
+      .wei{
+          color: rgb(255, 0, 0);
+      }
+
+</style>
+</head>
+<body>
+       <ul>
+           <li class="qiu">麦克白</li>
+           <li>奥瑟罗</li>
+           <LI class="qiu">李尔王</LI>
+           <li>哈姆雷特</li>
+       </ul>
+       <div class="qiu">我也想变成绿色</div><br>
+       <div class="wei">我想变成红色的</div>
+</body>
+</html>

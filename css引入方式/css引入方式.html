@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css引入方式</title>
+    <style>
+        /*css的三种样式表，按照css样式书的位置（或者引入的方式），css样式表可分为三大类*/
+        /*第一行内样式表（行内式），第二内部样式表（嵌入式），第三外部样式表（链接式）*/
+        /*第一内部样式表，内部样式表（内嵌样式表）是写到html页面内部，
+         是将所有的css代码抽取出来，单独放到一个<style>标签中*/
+        /*第一<style>标签理论上可以放在html文档的任何地方，但一般会放在文档的<head>标签中*/    
+        /*第一通过此方式，可以方便控制当前整个页面的元素样式设置*/
+        /*代码结构清晰，但是并没有实现结构与样式完全分离*/
+        /*使用内部样式表设定css，通常也被称为嵌入式引入*/
+
+        /*第二行内样式表；第二行内样式表是在元素标签内部的style属性设定css样式，适用于修改简单样式*/
+        /*style其实就是标签的属性*/
+        /*在双引号中间，写法要符合css规则*/
+        /*可以控制当前的标签属性*/
+        /*使用行内样式表设定css，通常也被称为行内式引入*/
+
+        /*第三外部样式表；实际开发都是外部样式表，适合与样式比较多的情况，
+        核心是；样式单独放到写css文件中，之后把css文件引入到html页面中使用*/
+        /*引入外部样式表分为两步；*/
+        /*第一步；新建一个后缀名为.css的样式文件，把所有css代码都放到此文件中*/
+        /*第二步；在html页面中，使用<link>标签引入这个文件*/     
+        /*<link rel="stylesheet" href="css文件路径">*/
+        </style>
+</head>
+<body>
+ <p style="color: pink ; font-size: 30px;">夏天夏天悄悄过去留下小秘密</p>
+ <p style="color: pink ; font-size: 30px;">压心底压心底不能告诉你</p>
+ <p style="color: pink ; font-size: 30px;">晚风吹过温暖我心底我又想起你</p>
+ <p style="color: pink ; font-size: 30px;">多甜蜜多甜蜜怎能忘记</p>
+ <P style="color: pink ; font-size: 30px;">不能忘记你把你写在日记里</P>
+ <p style="color: pink ; font-size: 30px;">不能忘记你心里想的还是你</p>
+ <P style="color: pink ; font-size: 30px;">浪漫的夏季还有浪漫的一个你</P>
+
+
+
+ 
+</body>
+
+</html>
