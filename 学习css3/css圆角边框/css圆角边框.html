@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css圆角边框</title>
+    <style>
+        /* border-radius属性用于设置元素的外边框圆角*/
+        /* radius半径（圆的半径）圆与边框的交集形成的圆角效果*/
+        /*参数值可以是数值也可以是百分比*/
+        /*如果是正方形，想要设置为一个圆，把数值修改为高度或者宽度一半就可以，或者直接写成50%*/
+        /*如果是矩形，设置为高度的一半就可以*/
+       
+
+        .qiu {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*border-radius: 100px;*/
+            /*50%意思就是宽度和高度的一半，效果等价于100px*/
+            border-radius: 50%;
+        }
+        .wei {
+            width: 300px;
+            height: 100px;
+            background-color:#ff6f;
+            /*圆角矩形设置为高度的一半就可以了*/
+            border-radius: 50px;
+        }
+        .qiuwei {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(209, 26, 50);
+            border-radius: 10px 20px 30px 40px ;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="qiu"></div>
+    <div class="wei"></div>
+    <div class="qiuwei"></div>
+
+</body>
+</html>

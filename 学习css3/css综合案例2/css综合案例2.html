@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css综合案例2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          }
+          /*新知识点；如何去掉li前面的项目符号（小圆点）*/
+          /*格式为；list-style:none;*/
+           li {
+              list-style: none;/*删除页面中所有的 li 里面的小圆点*/
+               }
+          .box {
+              width: 248px;/*设置一个宽度*/
+              height: 163px;/*设置一个高度*/
+              border: 1px solid #ccc;/*加一个实线白色边框*/
+              margin: 100px auto;/*水平居中显示，上下有100的距离*/
+          }
+          .box h3 {
+              height: 32px;/*设置一个高度*/
+              border-bottom: 1px dotted #ccc;/*加一个点线白色向下边框*/
+              font-size: 14px;/*给文字设置一个大小*/
+              font-weight: 400;/*取消文字加粗效果*/
+              line-height: 32px;/*让行高等于盒子的高度即可实现，文字可以垂直居中*/
+              padding-left: 15px;/*没有指定宽度用 padding 指定靠左移15像素*/
+
+          }
+          .box ul li a {
+              font-size: 12px;/*给字体设置大小*/
+              color: #666;/*给字体设置颜色*/
+              text-decoration: none;/*删除下划线*/
+         }
+         .box ul li {
+             height: 23px;/*设置高度为23*/
+             line-height: 23px;/*让行高等于盒子的高度即可实现，文字可以垂直居中*/
+             padding-left: 20px;/*给li指定padding向左20内边距*/
+        }
+        .box ul {
+            margin-top: 8px;/*给ul指定一个margin向上8外边距*/
+        }
+        .box ul li a:hover {
+            text-decoration: underline;/*鼠标经过时会有下划线*/
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>品优购快报</h3>
+    <ul>
+        <li><a href="#">【特惠】考款耳机5折妙！</a></li>
+        <li><a href="#">【特惠】母亲节，健康好礼低至5折！</a></li>
+        <li><a href="#">【特惠】爆款耳机5折秒！</a></li>
+        <li><a href="#">【特惠】9.9元洗100张照片！</a></li>
+        <li><a href="#">【特惠】长虹智能空调立省1000</a></li>
+    </ul>
+     
+  
+    
+    </div>
+</body>
+</html>

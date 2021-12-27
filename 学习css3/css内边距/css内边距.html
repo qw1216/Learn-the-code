@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css内边距</title>
+    <style>
+        /* padding 属性用于设置边内距，即边框与内容之间的距离*/
+        /* padding 有四大属性*/
+        /* padding-left作用左内边距，第二padding-right作用右内边距，
+        第三padding-top作用上内边距，第四padding-bottom作用下内边距*/
+        /*内边距 padding 会影响盒子的实际大小，内容和边框有了距离，添加了内边距》*/
+        /*如果盒子已经有了宽度和高度，此时在指定内框，盒子的准确度会降低*/
+        /*解决方案；如果要保证盒子和效果图大小保持一致，则让 width 和 height 减去多出来的内边距大小即可*/
+         div {
+             width: 200px;/*设置一个宽度*/
+             height: 200px;/*设置一个高度*/
+             background-color: pink;/*给背景设置一个粉红色*/
+             /*padding-left: 20px;/*距离盒子左边有20像素距离*/
+             /*padding-top: 20px;/*距离盒子上面有20像素距离*/
+             /*padding-right: 20px;/*距离盒子右边有20像素距离*/
+             /*padding-bottom: 20px;/*距离盒子下面有20像素距离*/
+
+             /*内边距复合写法（简写）*/
+             /*padding 如果跟的是一个数值，那么上下左右都是一致的*/
+             /*padding: 20px;*/
+
+            /*padding 如果跟两个数值，代表上下内边距为第一个数值，左右内边距是第二个数值*/
+            /* padding: 5px 10px;*/
+
+            /*padding 如果跟三个数值，代表上内边距是第一个数值，左右内边距是第二个数值，下边距是第三个数值*/
+            /*padding: 5px 10px 20px;*/
+
+            /*padding 如果跟四个数值，上边距是第一个，右边距是第二个，下边距是第三个，左边距是第四个，顺时针方向。*/
+            padding: 5px 10px 15px 20px;
+
+             }
+         
+        
+
+    </style>
+</head>
+<body>
+ <div>盒子内容是content盒子内容是content
+     盒子内容是content盒子内容是content</div>
+</body>
+</html>

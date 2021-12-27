@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css边框练习</title>
+    <style>
+        div {
+            width: 300px;/*设置宽度*/
+            height: 200px;/*设置高度*/
+            /*下面格式运用到了；层叠性*/
+            /*border其中包含四条边*/
+            border: 5px solid  blue;/*边框颜色改为蓝色*/
+            /*层叠性 只是层叠了上边框*/
+            /*border-top只是层叠了上面border的上边框，所以可以更改颜色*/
+            border-top: 5px solid red;/*上边框颜色改为红色*/
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

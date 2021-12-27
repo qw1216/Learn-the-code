@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css盒子阴影</title>
+    <style>
+        /*我可以使用 box-shadow属性为盒子添加阴影*/
+        /*盒子阴影是不会占空间的，不会影响其他盒子的排列*/
+
+        div {
+            width: 200px;/*设置宽度*/
+            height: 200px;/*设置高度*/
+            background-color:pink;/*设置背景图片*/
+            margin: 100px auto;/*设置上下外边距的宽度为100，左右为自动适应*/
+            /*box-shadow: 10px 10px 10px 10px red ;*/
+        }
+        /*原先盒子没有影子，当我们鼠标经过盒子就添加阴影效果*/
+        div:hover {
+            box-shadow: 10px 10px 20px 10px red ;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

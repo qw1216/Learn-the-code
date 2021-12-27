@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素和行内块元素水平居中</title>
+    <style>
+      /*行内块元素和行内元素水平居中给父元素添加 test-aling:center 即可*/
+      .qiu {
+            width: 900px;/*设置一个宽度*/
+            height: 200px;/*设置一个高度*/
+            background-color: pink;/*设置一个背景颜色*/
+            margin: 0 auto;/*这个参数第一个意思为上下为0 第二个块级盒子左右居中显示*/
+            text-align: center;/*可以让行内元素和行内块元素水平居中对齐*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="qiu">
+        <span>里面的文字</span><!--给行内元素添加水平居中-->
+    </div>
+
+    <div class="qiu">
+       <img src="comm.jpeg" alt=""><!--给行行内块元素添加水平居中-->
+    </div>
+</body>
+</html>

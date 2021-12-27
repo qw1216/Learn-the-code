@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css盒子边框的复合写法</title>
+    <style>
+        div {
+            width: 300px;/*设置一个宽度*/
+            height: 200px;/*设置一个高度*/
+           /* border-width: 5px;*//*给边框设置的宽度*/
+            /*border-style: solid;*//*设置 了一个实线边框*/
+           /* border-color: pink;*//*给边框设置的颜色为粉红色*/
+            /*边框的复合简写法*/
+           /* border: 5px solid pink;*/
+           
+            /*边框分开写法*/
+            /*上边框*/
+            border-top: 5px solid darkblue;
+            /*下边框*/
+            border-bottom: 5px solid red;
+            /*右边框*/
+            border-right: 5px solid chartreuse;
+            /*左边框*/
+            border-left: 5px solid purple;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

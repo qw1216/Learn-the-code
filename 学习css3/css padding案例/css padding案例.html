@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css padding 案例</title>
+    <style>
+        /* padding内边距可以撑开盒子，我们可以做非常巧妙的运用*/
+        /*因为每个导航栏里面的字数不一样多，我们可以不用给每个宽度了，直接个padding最合适*/
+        .qiu {
+        height: 41px;/*设置一个高度*/
+        border-top: 3px solid #ff8500;/*设置一个上边框实线的颜色为橙色*/
+        border-bottom: 1px solid #edeef0;/*设置下边框实线的颜色为白色*/
+        background-color:#fcfcfc;/*设置了背景颜色为白色*/
+        line-height: 41px;/*设置文字居中对齐，行高等于总高即可*/
+        }
+        .qiu a {
+        /* a属于行内元素 此时必须转换为 行内块元素*/
+        display: inline-block;/*转换为行块元素*/
+        height: 41px;/*设置高度*/
+        padding: 0 20px;/*第一个数值意思为上下为0，第二个数值为左右为20数值*/
+        font-size: 12px;/*设置了字体大小*/
+        color: #4c4c4c;/*设置了字体颜色*/
+        text-decoration: none;/*删除了下划线*/
+        }
+        .qiu a:hover {
+            background-color:rgb(254, 255, 192);/*给背景设置一个颜色*/
+        }
+    </style>
+</head>
+<body>
+    <div class="qiu">
+        <a href="#">新浪导航</a>
+        <a href="#">手机移动网</a>
+        <a href="#">移动客户端</a>
+        <a href="#">腾讯网</a>
+        <a href="#">微信</a>
+    </div>
+</body>
+</html>

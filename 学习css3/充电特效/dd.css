@@ -1,0 +1,198 @@
+*     {
+    padding: 0;
+    margin: 0;
+}
+.qiu {
+    width: 1000px;
+    height:1000px;
+    background: #000;
+    margin: 20px auto;
+    padding-top: 20px;
+
+}
+
+.qy {
+    width: 1000px;
+    height: 10px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    position: absolute;
+    top: 11%;
+    left: 21.7%;
+    margin-left: -100px;
+    z-index: 8;
+    font-size: 30px;
+
+}
+
+
+.wei {
+    width: 100%;
+    height: 100%;
+    background:#000;
+    position: relative;
+    filter: contrast(15);
+    animation: huerotate 5s linear infinite;
+}
+@keyframes huerotate {
+    0% {
+        filter: contrast(15) hue-rotate(0);
+       }
+
+     100% {
+         filter: contrast(15) hue-rotate(360deg);
+     }
+
+}
+
+  
+
+
+
+
+
+
+
+.qw {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -150px;
+    filter: blur(8px);
+    animation: circlerotate 5s linear infinite;
+}
+.qw::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background:#00ff6f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 42% 38% 62% 49% / 46%;
+}
+
+.qw::after {
+    content: "";
+    width: 176px;
+    height: 178px;
+    background: #000;
+    border: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 50%;
+
+}
+@keyframes circlerotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.qwe {
+    width: 150px;
+    height: 50px;
+    background: #00ff6f;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -75px;
+    border-radius: 150px 150px 0 0;
+    filter: blur(8px);
+}
+.qyy {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    z-index: 1oo;
+    animation: bubblemoveup 5s ease-in-out infinite;
+    filter: blur(5px );
+}
+ .qyy:nth-child(1) {
+     width: 20px;
+     height: 20px;
+     left: 53%;
+     animation-duration: 3.2s;
+     animation-delay: 3s;
+ }
+ .qyy:nth-child(2) {
+    width: 28px;
+    height: 28px;
+    left: 54%;
+    animation-duration: 3.2s;
+    animation-delay: 4s;
+}
+.qyy:nth-child(3) {
+    width: 23px;
+    height: 23px;
+    left: 53%;
+    animation-duration: 3.2s;
+    animation-delay: 5s;
+}
+.qyy:nth-child(7) {
+    width: 21px;
+    height: 21px;
+    left: 52%;
+    animation-duration: 3.9s;
+    animation-delay: 3s;
+}
+
+.qyy:nth-child(4) {
+    width: 33px;
+    height: 33px;
+    left: 53%;
+    animation-duration: 3,5s;
+    animation-delay: 1.5s;
+}
+
+.qyy:nth-child(5) {
+    width: 23px;
+    height: 23px;
+    left: 50%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+.qyy:nth-child(7) {
+    width: 23px;
+    height: 23px;
+    left: 50%;
+    animation-duration: 3.2s;
+    animation-delay: 4.3s;
+}
+.qyy:nth-child(9) {
+    width: 23px;
+    height: 23px;
+    left: 50%;
+    animation-duration: 3.2s;
+    animation-delay: 4.1s;
+}
+.qyy:nth-child(8) {
+    width: 23px;
+    height: 23px;
+    left: 50%;
+    animation-duration: 3.2s;
+    animation-delay: 4s;
+}
+
+
+@keyframes bubblemoveup {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: calc(100% - 100px);
+    }
+}
